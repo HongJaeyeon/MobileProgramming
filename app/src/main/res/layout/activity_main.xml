@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ICON" />
+    </LinearLayout>
+
+
+    <!-- 가운데 레이아웃 scroll View로 할지 말지 결정-->
+    <!-- 버튼 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <Button
+        android:id="@+id/Login_btn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/TextViewBlue"
+        android:gravity="center"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/Signup_btn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/TextView"
+        android:text="Sign Up" />
+
+    <Button
+    android:id="@+id/Matching_btn"
+    android:layout_width="300dp"
+    android:layout_height="50dp"
+    android:background="@drawable/TextViewBlue"
+    android:gravity="center"
+    android:text="Matching" />
+
+    <Button
+        android:id="@+id/Board_btn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/TextViewBlue"
+        android:text="Board" />
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chat.Chat_list"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <!-- 위치 조정 버튼 위한 리니어레이아웃-->
+
+
+    <Button
+        android:id="@+id/chat_to_main"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left"
+        android:background="@drawable/뒤로가기"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/GPS_SET"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/TextViewBlue"
+        android:text="GPS SET" />
+
+    <ListView
+        android:id="@+id/chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="400"
+        android:layout_weight="8" />
+
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 아하 파일 이름이 S이면...-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:id="@+id/test1">
+
+    <Button
+        android:id="@+id/board_to_main"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left"
+        android:background="@drawable/뒤로가기"
+        android:layout_marginLeft="10dp"/>
+
+    <!--상단 레이아웃-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:background="@drawable/TextViewBlue"
+            android:text="                  Board"
+            android:textSize="15pt" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/listview1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="8">
+
+
+    </ListView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/write"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/subbutton"
+            android:text="Write"
+            android:layout_marginLeft="100dp"/>
+
+        <Button
+            android:id="@+id/Fragment"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/subbutton"
+            android:text="fragment"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

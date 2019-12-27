@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 아하 파일 이름이 S이면...-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+    <!--윗라인-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/Main_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left"
+        android:background="@drawable/뒤로가기"
+        android:layout_marginLeft="10dp"/>
+
+
+    <!--중단-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ICON"
+            android:layout_marginBottom="70dp"/>
+
+        <EditText
+
+            android:id="@+id/user_email"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="   Email"
+            android:background="@drawable/TextView"/>
+
+        <EditText
+            android:id="@+id/user_pw"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="   Password"
+            android:background="@drawable/TextView"/>
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            />
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:id="@+id/login_btn"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/TextViewBlue"
+            android:text="Login" />
+
+        <Button
+            android:id="@+id/login_to_signup"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Sign Up"
+            android:background="@drawable/TextView"
+            android:layout_marginBottom="30dp"/>
+
+
+
+    </LinearLayout>
+
+    <!--하단-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+</LinearLayout>
