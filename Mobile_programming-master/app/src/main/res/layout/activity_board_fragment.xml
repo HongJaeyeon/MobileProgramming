@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="15"
+    >
+    <!-- for button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            android:background="@drawable/뒤로가기"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="35dp"/>
+
+        <Button
+            android:id="@+id/attned"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/subbutton"
+            android:text="Join" />
+
+        <Button
+            android:id="@+id/attend_cancle"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/subbutton"
+            android:text="cancle" />
+
+        <Button
+            android:id="@+id/Mozip_magam"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/subbutton"
+            android:text="Close" />
+
+        <TextView
+            android:id="@+id/attend_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0" />
+
+    </LinearLayout>
+
+
+    <!-- for text-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/Frg_title"
+            android:layout_width="match_parent"
+            android:layout_height="46dp" />
+
+        <TextView
+            android:id="@+id/Frg_content"
+            android:layout_width="match_parent"
+            android:layout_height="166dp" />
+
+        <ListView
+            android:id="@+id/comment_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"></ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        >
+
+        <EditText
+            android:id="@+id/comment_edittext"
+            android:layout_width="335dp"
+            android:layout_height="match_parent"
+            android:hint="댓글을 입력하세요" />
+
+        <Button
+            android:id="@+id/comment_submit"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="@drawable/subbutton"
+            android:layout_weight="1"
+            android:text="Submit" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
+

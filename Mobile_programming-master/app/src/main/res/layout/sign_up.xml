@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 아하 파일 이름이 S이면...-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+    <!--윗라인-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+    <Button
+        android:id="@+id/Main_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left"
+        android:background="@drawable/뒤로가기"
+        android:layout_marginLeft="10dp"/>
+
+        />
+    <!--중단-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ICON"
+            android:layout_marginBottom="70dp"/>
+
+        <EditText
+            android:id="@+id/User_name"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/TextView"
+            android:hint="   Name" />
+
+        <EditText
+            android:id="@+id/User_want_email"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/TextView"
+            android:hint="   Email"
+            android:layout_marginTop="5dp"
+
+            />
+
+        <Button
+            android:id="@+id/Email_check_btn"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/TextViewBlue"
+            android:text="Email check" />
+
+        <EditText
+            android:id="@+id/User_want_pw"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/TextView"
+            android:layout_marginTop="5dp"
+            android:hint="   Password"
+            android:inputType="textPassword"
+            />
+
+        <EditText
+            android:id="@+id/User_want_pw_check"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/TextView"
+            android:layout_marginTop="5dp"
+            android:hint="   Confirm Password"
+            android:inputType="textPassword"
+            />
+
+        <Button
+            android:id="@+id/Signup_btn"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/TextViewBlue"
+            android:text="Sign up" />
+
+
+    </LinearLayout>
+
+    <!--하단-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+</LinearLayout>
